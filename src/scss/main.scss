@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+.wrapper{
+    .address{
+        height: 280px;
+        background-image: url('../img/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .address-container{
+            padding-top: 33px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                text-align: center;
+                color: #FFFFFF;
+                font-size: 32px;
+                letter-spacing: -0.29px;
+                font-weight: 500;
+                margin-bottom: 31px;
+            }
+            .search{
+                width: 100%;
+                max-width: 555px;
+                height: 58px;
+                background-color: #FFFFFF;
+                box-shadow: 0px 50px 50px -25px #00000019;
+                border-radius: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 24px;
+                margin-bottom: 48px;
+                input{
+                    width: 100%;
+                    max-width: 299px;
+                    height: 21px;
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                }
+                wrap{
+                    width: 58px;
+                    height: 58px;
+                    background-color: black;
+                    border-top-right-radius:15px ;
+                    border-bottom-right-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .information{
+                width: 100%;
+                min-height: 161px;
+                background-color: #FFFFFF;
+                box-shadow: 0px 50px 50px -25px #00000019;
+                border-radius:10px ;
+                padding: 37px 32px;
+                z-index: 1;
+                display: flex;
+                div{
+                    width: 100%;
+                max-width: 213px;
+                    p{
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #2C2C2C;
+                        letter-spacing: 1.75px;
+                        opacity: 49.87%;
+                        margin-bottom: 13px;
+                        @media (max-width:917px){
+                        margin-bottom: 7px;
+                            text-align: center;
+                        }
+                    }
+                    h2{
+                        font-size: 26px;
+                        font-weight: 500;
+                        letter-spacing: -0.23px;
+                        @media (max-width:917px){
+                            font-size: 24px;
+                            letter-spacing: -0.18px;
+                            text-align: center;
+                        }
+                    }
+                }
+                span{
+                    width: 1px;
+                    height: 72px;
+                    margin-top: 6px;
+                    background-color:#000000;
+                    opacity: 15%;
+                    margin-left: 32px;
+                }
+                .info{
+                    margin-left: 32px;
+                        
+                }
+                .isp{
+                    max-width:100px;
+                }
+               
+                @media (max-width:917px){
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   justify-content: center;
+                   gap: 24px;
+                   padding: 16px 24px;
+                    max-width: 327px;
+                   span{
+                    display: none;
+                   }
+
+                   div{
+                    max-width: 279px;
+
+                   }
+                   .info{
+                    margin: 0;
+                   }
+                   .isp{
+                    max-width:279px;
+                }
+                   
+                }
+            }
+        }
+    }
+    .maps{
+        width: 100%;
+        height: 520px;
+    }
+}
